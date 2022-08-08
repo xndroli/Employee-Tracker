@@ -6,12 +6,11 @@ Because this application won’t be deployed, I will create a walkthrough video 
 
 ## Table of Contents
 
-* [User-Story](#User-Story)
-* [Acceptance-Criteria](#Acceptance-Criteria)
-* [Demo](#Demo)
-* [Features](#Features)
-* [Bonus](#Bonus)
-
+- [User-Story](#User-Story)
+- [Acceptance-Criteria](#Acceptance-Criteria)
+- [Demo](#Demo)
+- [Features](#Features)
+- [Bonus](#Bonus)
 
 ## User Story
 
@@ -47,13 +46,13 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 The following video shows an example of the application being used from the command line:
 
-[![A video thumbnail shows the command-line employee management application with a play button overlaying the view.](./Assets/12-sql-homework-video-thumbnail.png)](https://2u-20.wistia.com/medias/2lnle7xnpk)
+[![A video thumbnail shows the command-line employee management application with a play button overlaying the view.]](https://embed-ssl.wistia.com/deliveries/ab5d1b408e8e49b34504a0c25f02a9f76f530e96.jpg?image_play_button_size=2x&image_crop_resized=960x540&image_play_button=1&image_play_button_color=066099e0)(https://2u-20.wistia.com/medias/2lnle7xnpk?wvideo=2lnle7xnpk")
 
 ## Features
 
 You’ll need to use the [MySQL2 package](https://www.npmjs.com/package/mysql2) to connect to your MySQL database and perform queries, the [Inquirer package](https://www.npmjs.com/package/inquirer) to interact with the user via the command line, and the [console.table package](https://www.npmjs.com/package/console.table) to print MySQL rows to the console.
 
-**Important**: 
+**Important**:
 
 The queries in this application are asynchronous. MySQL2 exposes a `.promise()` function on Connections to upgrade an existing non-Promise connection to use Promises. To learn more and make your queries asynchronous, refer to the [npm documentation on MySQL2](https://www.npmjs.com/package/mysql2).
 
@@ -63,33 +62,33 @@ The database schema is designed as shown in the following image:
 
 As the image illustrates, the schema contains the following three tables:
 
-* `department`
+- `department`
 
-  * `id`: `INT PRIMARY KEY`
+  - `id`: `INT PRIMARY KEY`
 
-  * `name`: `VARCHAR(30)` to hold department name
+  - `name`: `VARCHAR(30)` to hold department name
 
-* `role`
+- `role`
 
-  * `id`: `INT PRIMARY KEY`
+  - `id`: `INT PRIMARY KEY`
 
-  * `title`: `VARCHAR(30)` to hold role title
+  - `title`: `VARCHAR(30)` to hold role title
 
-  * `salary`: `DECIMAL` to hold role salary
+  - `salary`: `DECIMAL` to hold role salary
 
-  * `department_id`: `INT` to hold reference to department role belongs to
+  - `department_id`: `INT` to hold reference to department role belongs to
 
-* `employee`
+- `employee`
 
-  * `id`: `INT PRIMARY KEY`
+  - `id`: `INT PRIMARY KEY`
 
-  * `first_name`: `VARCHAR(30)` to hold employee first name
+  - `first_name`: `VARCHAR(30)` to hold employee first name
 
-  * `last_name`: `VARCHAR(30)` to hold employee last name
+  - `last_name`: `VARCHAR(30)` to hold employee last name
 
-  * `role_id`: `INT` to hold reference to employee role
+  - `role_id`: `INT` to hold reference to employee role
 
-  * `manager_id`: `INT` to hold reference to another employee that is the manager of the current employee (`null` if the employee has no manager)
+  - `manager_id`: `INT` to hold reference to another employee that is the manager of the current employee (`null` if the employee has no manager)
 
 There is a separate file that contains functions for performing specific SQL queries you'll need to use. A constructor function or class has been included to help organize these. I have also included a `seeds.sql` file to pre-populate the database, making the development of individual features much easier.
 
@@ -97,15 +96,16 @@ There is a separate file that contains functions for performing specific SQL que
 
 Try to add some additional functionality to your application, such as the ability to do the following:
 
-* Update employee managers.
+- Update employee managers.
 
-* View employees by manager.
+- View employees by manager.
 
-* View employees by department.
+- View employees by department.
 
-* Delete departments, roles, and employees.
+- Delete departments, roles, and employees.
 
-* View the total utilized budget of a department&mdash;in other words, the combined salaries of all employees in that department.
+- View the total utilized budget of a department&mdash;in other words, the combined salaries of all employees in that department.
 
 ---
+
 © 2022 xndroli. Confidential and Proprietary. All Rights Reserved.

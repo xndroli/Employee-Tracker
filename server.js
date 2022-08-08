@@ -1,6 +1,6 @@
-const inquirer = require('inquirer');
-const cTable = require('console.table');
 const db = require('./db/connection');
+const cTable = require('console.table');
+const inquirer = require('inquirer');
 
 // Inquirer (CLI User Prompts)
 const promptUser = async () => {
