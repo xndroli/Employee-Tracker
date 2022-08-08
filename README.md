@@ -46,7 +46,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 The following video shows an example of the application being used from the command line:
 
-[![A video thumbnail shows the command-line employee management application with a play button overlaying the view.]](https://embed-ssl.wistia.com/deliveries/ab5d1b408e8e49b34504a0c25f02a9f76f530e96.jpg?image_play_button_size=2x&image_crop_resized=960x540&image_play_button=1&image_play_button_color=066099e0)(https://2u-20.wistia.com/medias/2lnle7xnpk?wvideo=2lnle7xnpk")
+[![A video thumbnail shows the command-line employee management application with a play button overlaying the view.](./assets/images/SQL%20Employee%20Tracker.jpg)](https://2u-20.wistia.com/medias/2lnle7xnpk?wvideo=2lnle7xnpk")
 
 ## Features
 
