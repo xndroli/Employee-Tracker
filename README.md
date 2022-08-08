@@ -58,7 +58,7 @@ The queries in this application are asynchronous. MySQL2 exposes a `.promise()` 
 
 The database schema is designed as shown in the following image:
 
-![Database schema includes tables labeled “employee,” role,” and “department.”](./Assets/12-sql-homework-demo-01.png)
+![Database schema includes tables labeled “employee,” role,” and “department.”](./assets/images/SQL%20structure.png)
 
 As the image illustrates, the schema contains the following three tables:
 
